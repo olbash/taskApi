@@ -1,21 +1,12 @@
 package stepDefinitions;
-import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
 import config.PetApi;
-
-import gherkin.deps.com.google.gson.JsonParser;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import modelsPet.ParticularPetDto;
 import modelsPet.RetrievePetByIdDto;
-import modelsUser.ParticularUserDto;
-import org.json.JSONArray;
-import org.json.JSONObject;
 import org.junit.Assert;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
