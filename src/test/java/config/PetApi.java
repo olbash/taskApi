@@ -1,13 +1,10 @@
 package config;
-
 import bodies.AddPet;
 import helpers.Utils;
 import io.restassured.response.Response;
-
 import java.util.HashMap;
 import java.util.Map;
 import static config.Endpoints.*;
-
 import static io.restassured.RestAssured.given;
 
 public class PetApi {

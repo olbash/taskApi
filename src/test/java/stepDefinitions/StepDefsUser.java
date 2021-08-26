@@ -2,7 +2,6 @@ package stepDefinitions;
 
 import config.UserApi;
 import io.cucumber.datatable.DataTable;
-import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
@@ -60,7 +59,12 @@ public class StepDefsUser {
         Assert.assertEquals(message, actual.getMessage());
     }
 
-    @When("user sends GET request with username {string}")
+    @When("user sends GET request with username {word}")
+    public void userSendsGETRequestWithUsername(String username) {
+        response = userApi.retrieveUserByUsername(username);
+    }
+
+    @When("the user sends GET request with username {string}")
     public void getUserByUsername(String username) {
         response = userApi.retrieveUserByUsername(username);
     }
@@ -106,4 +110,6 @@ public class StepDefsUser {
         ParticularUserDto actual = response.as(ParticularUserDto.class);
         Assert.assertEquals(username, actual.getUsername());
     }
+
+
 }

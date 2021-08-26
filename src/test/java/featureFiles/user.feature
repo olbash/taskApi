@@ -36,7 +36,7 @@ Feature: User feature
       Given user sends POST request with valid parameters
         | id   | username   | firstName   | lastName   | email   | password   | phone   | userStatus   |
         | <id> | <username> | <firstName> | <lastName> | <email> | <password> | <phone> | <userStatus> |
-      When user sends GET request with username "OlolTester1"
+      When the user sends GET request with username "OlolTester1"
       Then user retrieves code
       And user retrieves type "error"
       And user retrieves msg "User not found"
@@ -73,7 +73,7 @@ Feature: User feature
       | id   | username   | firstName   | lastName   | email   | password   | phone   | userStatus   |
       | <id> | <username> | <firstName> | <lastName> | <email> | <password> | <phone> | <userStatus> |
     When user sends PUT request with old username <username> and new username "userOl23updated"
-    And user sends GET request with username "userOl23updated"
+    And the user sends GET request with username "userOl23updated"
     Then user retrieves username "userOl23updated"
     Examples:
       | id       | username | firstName | lastName | email             | password | phone     | userStatus |
