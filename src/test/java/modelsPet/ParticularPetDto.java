@@ -1,10 +1,11 @@
 package modelsPet;
+import java.math.BigInteger;
 import java.util.List;
 
 //@JsonFormat(shape = JsonFormat.Shape.ARRAY)
 public class ParticularPetDto {
 
-    private long id;
+    private BigInteger id;
     private PetCategory category;
     private String name;
     private List<String> photoUrls;
@@ -12,11 +13,11 @@ public class ParticularPetDto {
     private String status;
 
 
-    public long getId() {
+    public BigInteger getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(BigInteger id) {
         this.id = id;
     }
 
