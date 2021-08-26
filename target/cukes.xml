@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="6.555">
+    <testcase classname="Pet feature" name="Add a new pet to the store and add a photo" time="2.415">
+        <system-out>
+            <![CDATA[When user creates a new pet with name, status...............................passed
+Then api call is successful with status code 200............................passed
+And DTO contains specified name, status.....................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Pet feature" name="Add a new pet to the store and add a photo 2" time="0.667">
+        <system-out>
+            <![CDATA[When user creates a new pet with name, status...............................passed
+Then api call is successful with status code 200............................passed
+And DTO contains specified name, status.....................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Pet feature" name="Find all pets with a particular status" time="0.718">
+        <system-out>
+            <![CDATA[When user looks for pets with a particular 'sold':..........................passed
+Then api call is successful with status code 200............................passed
+And only particular 'sold' is present in response:..........................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Pet feature" name="Create a pet and update its name to &quot;RickMorty&quot;" time="1.322">
+        <system-out>
+            <![CDATA[When user creates a new pet with name, status...............................passed
+And user updates existing pet's name to "RickMorty" and status to "pending".passed
+Then api call is successful with status code 200............................passed
+And pet's name equals to "RickMorty", status equals to "pending"............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Pet feature" name="Create a pet and then delete it" time="1.309">
+        <failure message="" type="java.lang.AssertionError">
+            <![CDATA[When user creates a new pet with name, status...............................passed
+And user deletes the newly created pet......................................passed
+Then api call is successful with status code 200............................failed
+When user retrieves pet by id...............................................skipped
+And GET pet by id returns type : "error" and message: "Pet not found".......skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepDefinitions.StepDefsPet.apiCallIsSuccessfulWithStatusCode(StepDefsPet.java:40)
+	at ✽.api call is successful with status code 200(file:///C:/Users/o.basha/IdeaProjects/TaskApi/src/test/java/featureFiles/pet.feature:42)
+]]>
+        </failure>
+    </testcase>
+</testsuite>

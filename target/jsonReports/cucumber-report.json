@@ -1,0 +1,408 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-08-23T12:29:00.379Z",
+        "line": 12,
+        "name": "Add a new pet to the store and add a photo",
+        "description": "",
+        "id": "pet-feature;add-a-new-pet-to-the-store-and-add-a-photo;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2282326400,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user creates a new pet with name, status",
+            "match": {
+              "location": "stepDefinitions.StepDefsPet.userCreatesANewPet(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "status"
+                ]
+              },
+              {
+                "cells": [
+                  "Alice",
+                  "available"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2944500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "api call is successful with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.StepDefsPet.apiCallIsSuccessfulWithStatusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 64855500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "DTO contains specified name, status",
+            "match": {
+              "location": "stepDefinitions.StepDefsPet.dtoContainsSpecifiedNameStatus()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-23T12:29:02.804Z",
+        "line": 13,
+        "name": "Add a new pet to the store and add a photo",
+        "description": "",
+        "id": "pet-feature;add-a-new-pet-to-the-store-and-add-a-photo;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 661506700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user creates a new pet with name, status",
+            "match": {
+              "location": "stepDefinitions.StepDefsPet.userCreatesANewPet(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "status"
+                ]
+              },
+              {
+                "cells": [
+                  "Bob",
+                  "sold"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 996900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "api call is successful with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.StepDefsPet.apiCallIsSuccessfulWithStatusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3988600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "DTO contains specified name, status",
+            "match": {
+              "location": "stepDefinitions.StepDefsPet.dtoContainsSpecifiedNameStatus()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-23T12:29:03.475Z",
+        "line": 23,
+        "name": "Find all pets with a particular status",
+        "description": "",
+        "id": "pet-feature;find-all-pets-with-a-particular-status;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 716873000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user looks for pets with a particular \u0027sold\u0027:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027sold\u0027",
+                  "offset": 38
+                }
+              ],
+              "location": "stepDefinitions.StepDefsPet.userLooksForPetsWithAParticularStatus(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "api call is successful with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.StepDefsPet.apiCallIsSuccessfulWithStatusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "only particular \u0027sold\u0027 is present in response:",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027sold\u0027",
+                  "offset": 16
+                }
+              ],
+              "location": "stepDefinitions.StepDefsPet.onlyParticularStatusIsPresentInResponse(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-23T12:29:04.196Z",
+        "line": 35,
+        "name": "Create a pet and update its name to \"RickMorty\"",
+        "description": "",
+        "id": "pet-feature;create-a-pet-and-update-its-name-to-\"rickmorty\";;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 664653100,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user creates a new pet with name, status",
+            "match": {
+              "location": "stepDefinitions.StepDefsPet.userCreatesANewPet(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "status"
+                ]
+              },
+              {
+                "cells": [
+                  "Alice",
+                  "available"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 654031900,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user updates existing pet\u0027s name to \"RickMorty\" and status to \"pending\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RickMorty\"",
+                  "offset": 36
+                },
+                {
+                  "val": "\"pending\"",
+                  "offset": 62
+                }
+              ],
+              "location": "stepDefinitions.StepDefsPet.userUpdatesExistingPetNameAndStatus(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "api call is successful with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.StepDefsPet.apiCallIsSuccessfulWithStatusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1992200,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "pet\u0027s name equals to \"RickMorty\", status equals to \"pending\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"RickMorty\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"pending\"",
+                  "offset": 51
+                }
+              ],
+              "location": "stepDefinitions.StepDefsPet.petNameEqualsToStatusEqualsTo(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-08-23T12:29:05.522Z",
+        "line": 48,
+        "name": "Create a pet and then delete it",
+        "description": "",
+        "id": "pet-feature;create-a-pet-and-then-delete-it;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 648350900,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "user creates a new pet with name, status",
+            "match": {
+              "location": "stepDefinitions.StepDefsPet.userCreatesANewPet(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "name",
+                  "status"
+                ]
+              },
+              {
+                "cells": [
+                  "Alice",
+                  "sold"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 655954400,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "user deletes the newly created pet",
+            "match": {
+              "location": "stepDefinitions.StepDefsPet.userDeletesTheNewlyCreatedPet()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:87)\r\n\tat org.junit.Assert.assertTrue(Assert.java:42)\r\n\tat org.junit.Assert.assertTrue(Assert.java:53)\r\n\tat stepDefinitions.StepDefsPet.apiCallIsSuccessfulWithStatusCode(StepDefsPet.java:40)\r\n\tat ✽.api call is successful with status code 200(file:///C:/Users/o.basha/IdeaProjects/TaskApi/src/test/java/featureFiles/pet.feature:42)\r\n",
+              "duration": 997000,
+              "status": "failed"
+            },
+            "line": 42,
+            "name": "api call is successful with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 40
+                }
+              ],
+              "location": "stepDefinitions.StepDefsPet.apiCallIsSuccessfulWithStatusCode(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": "user retrieves pet by id",
+            "match": {
+              "location": "stepDefinitions.StepDefsPet.userRetrievesPetById()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": "GET pet by id returns type : \"error\" and message: \"Pet not found\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"error\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"Pet not found\"",
+                  "offset": 50
+                }
+              ],
+              "location": "stepDefinitions.StepDefsPet.getPetByIdReturnsAnd(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Pet feature",
+    "description": "",
+    "id": "pet-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/featureFiles/pet.feature",
+    "tags": []
+  }
+]

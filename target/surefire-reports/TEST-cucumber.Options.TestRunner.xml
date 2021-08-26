@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="5" failures="1" name="cucumber.Options.TestRunner" time="6.544" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="cucumber.options" value="src/test/java/featureFiles/pet.feature:3"/>
+    <property name="java.vm.version" value="11.0.11+9-LTS-194"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.11\bin"/>
+    <property name="user.country.format" value="UA"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\o.basha\IdeaProjects\TaskApi"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\o.basha\IdeaProjects\TaskApi"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="java.runtime.version" value="11.0.11+9-LTS-194"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\O9EBD~1.BAS\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\Program Files\apache-maven-3.8.1\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Java\jdk-11.0.11\bin;C:\Program Files\apache-maven-3.8.1\bin;C:\Users\o.basha\AppData\Local\Microsoft\WindowsApps;C:\Users\o.basha\AppData\Local\Programs\Git\cmd;."/>
+    <property name="maven.conf" value="C:\Program Files\apache-maven-3.8.1\bin\../conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\Program Files\apache-maven-3.8.1\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\o.basha"/>
+    <property name="user.timezone" value="Europe/Helsinki"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="o.basha"/>
+    <property name="java.class.path" value="C:\Program Files\apache-maven-3.8.1\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test -Dcucumber.options=src/test/java/featureFiles/pet.feature:3"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.11"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language.format" value="uk"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.11"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.stderr.encoding" value="cp866"/>
+    <property name="maven.home" value="C:\Program Files\apache-maven-3.8.1\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2021-04-20"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="sun.stdout.encoding" value="cp866"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="Pet feature" name="Add a new pet to the store and add a photo #1" time="2.518"/>
+  <testcase classname="Pet feature" name="Add a new pet to the store and add a photo #2" time="0.674"/>
+  <testcase classname="Pet feature" name="Find all pets with a particular status" time="0.861"/>
+  <testcase classname="Pet feature" name="Create a pet and update its name to &quot;RickMorty&quot;" time="1.18"/>
+  <testcase classname="Pet feature" name="Create a pet and then delete it" time="1.311">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepDefinitions.StepDefsPet.apiCallIsSuccessfulWithStatusCode(StepDefsPet.java:40)
+	at ✽.api call is successful with status code 200(file:///C:/Users/o.basha/IdeaProjects/TaskApi/src/test/java/featureFiles/pet.feature:42)
+</failure>
+    <system-out>
+Scenario Outline: Create a pet and then delete it                       &amp;#27;[90m# src/test/java/featureFiles/pet.feature:48&amp;#27;[0m
+HTTP/1.1 200 OK
+Date: Mon, 23 Aug 2021 12:29:06 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    &quot;id&quot;: 3820877,
+    &quot;name&quot;: &quot;Alice&quot;,
+    &quot;photoUrls&quot;: [
+        
+    ],
+    &quot;tags&quot;: [
+        
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+}
+HTTP/1.1 200 OK
+Date: Mon, 23 Aug 2021 12:29:06 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+
+{
+    &quot;id&quot;: 3820877,
+    &quot;name&quot;: &quot;Alice&quot;,
+    &quot;photoUrls&quot;: [
+        
+    ],
+    &quot;tags&quot;: [
+        
+    ],
+    &quot;status&quot;: &quot;sold&quot;
+}
+  &amp;#27;[32mWhen &amp;#27;[0m&amp;#27;[32muser creates a new pet with name, status&amp;#27;[0m                         &amp;#27;[90m# stepDefinitions.StepDefsPet.userCreatesANewPet(io.cucumber.datatable.DataTable)&amp;#27;[0m
+HTTP/1.1 404 Not Found
+Date: Mon, 23 Aug 2021 12:29:06 GMT
+Content-Length: 0
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+HTTP/1.1 404 Not Found
+Date: Mon, 23 Aug 2021 12:29:06 GMT
+Content-Length: 0
+Connection: keep-alive
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+Access-Control-Allow-Headers: Content-Type, api_key, Authorization
+Server: Jetty(9.2.9.v20150224)
+  &amp;#27;[32mAnd &amp;#27;[0m&amp;#27;[32muser deletes the newly created pet&amp;#27;[0m                                &amp;#27;[90m# stepDefinitions.StepDefsPet.userDeletesTheNewlyCreatedPet()&amp;#27;[0m
+  &amp;#27;[31mThen &amp;#27;[0m&amp;#27;[31mapi call is successful with status code &amp;#27;[0m&amp;#27;[31m&amp;#27;[1m200&amp;#27;[0m                      &amp;#27;[90m# stepDefinitions.StepDefsPet.apiCallIsSuccessfulWithStatusCode(int)&amp;#27;[0m
+      &amp;#27;[31mjava.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepDefinitions.StepDefsPet.apiCallIsSuccessfulWithStatusCode(StepDefsPet.java:40)
+	at вњЅ.api call is successful with status code 200(file:///C:/Users/o.basha/IdeaProjects/TaskApi/src/test/java/featureFiles/pet.feature:42)
+&amp;#27;[0m
+  &amp;#27;[36mWhen &amp;#27;[0m&amp;#27;[36muser retrieves pet by id&amp;#27;[0m                                         &amp;#27;[90m# stepDefinitions.StepDefsPet.userRetrievesPetById()&amp;#27;[0m
+  &amp;#27;[36mAnd &amp;#27;[0m&amp;#27;[36mGET pet by id returns type : &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;error&quot;&amp;#27;[0m&amp;#27;[36m and message: &amp;#27;[0m&amp;#27;[36m&amp;#27;[1m&quot;Pet not found&quot;&amp;#27;[0m &amp;#27;[90m# stepDefinitions.StepDefsPet.getPetByIdReturnsAnd(java.lang.String,java.lang.String)&amp;#27;[0m
+</system-out>
+  </testcase>
+</testsuite>
